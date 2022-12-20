@@ -1,0 +1,291 @@
+.wrap-box-title {
+  margin-bottom: 14px;
+  border-bottom: 1px solid #d9d9d9;
+
+  .title {
+    position: relative;
+    font-family: "Roboto Bold";
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+
+    text-align: center;
+    color: #333333;
+    margin-bottom: 0;
+    margin: auto;
+  }
+
+  @media (min-width: 576px) {
+    margin-bottom: 32px;
+    .title {
+      font-size: 20px;
+    }
+    .description {
+      font-size: 16px;
+    }
+  }
+
+  .view-more {
+    margin: 22px auto 40px;
+    display: flex;
+    width: 160px;
+    height: 42px;
+    padding: 1px;
+    text-align: right;
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #333333;
+    position: relative;
+    background-image: linear-gradient(to right, #e00000, #05a518);
+    &:hover {
+      background-image: linear-gradient(to left, #e00000, #05a518);
+      text-decoration: none;
+      color: #000000;
+    }
+    a {
+      color: #000000;
+      text-decoration: none;
+      border-radius: 7px;
+      width: 100%;
+      height: 100%;
+      padding: 7px 24px;
+      left: 0;
+      bottom: 0;
+      background: #fff;
+      z-index: 1;
+
+      &::after {
+        content: "";
+        width: 16px;
+        height: 16px;
+        background-image: url("../images/lien-he/read-map.png");
+        margin-left: 4px;
+        background-size: 15px;
+        position: absolute;
+        left: 24px;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
+.contact-conent {
+  padding-bottom: 64px;
+  border-bottom: 1px solid #d9d9d9;
+  .contact-branch-list {
+    .conact-branch-item {
+      p {
+        &:nth-child(1) {
+          margin-bottom: 6px;
+        }
+        &:nth-child(2) {
+          margin-bottom: 12px;
+          font-size: 14px;
+          @media (min-width: 768px) {
+            font-size: 16px;
+          }
+          i {
+            width: 15px;
+          }
+        }
+      }
+      .view-more {
+        display: flex;
+        width: 160px;
+        height: 42px;
+        padding: 1px;
+        text-align: right;
+        border-radius: 8px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #333333;
+        position: relative;
+        transition: 0.2s;
+        background-image: linear-gradient(to right, #e00000, #05a518);
+        &:hover {
+          background-image: linear-gradient(to left, #e00000, #05a518);
+          text-decoration: none;
+          color: #000000;
+          padding: 2px;
+          a {
+            border-radius: 6px;
+          }
+        }
+        a {
+          color: #000000;
+          text-decoration: none;
+          border-radius: 7px;
+          width: 100%;
+          height: 100%;
+          padding: 7px 24px;
+          left: 0;
+          bottom: 0;
+          background: #fff;
+          z-index: 1;
+
+          &::after {
+            content: "";
+            width: 16px;
+            height: 16px;
+            background-image: url("../images/lien-he/read-map.png");
+            margin-left: 4px;
+            background-size: 15px;
+            position: absolute;
+            left: 24px;
+            top: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+      }
+    }
+  }
+  .contact-content-right {
+    @media (max-width: 768px) {
+      margin-top: 24px;
+    }
+    .wrapper-contact-form-content {
+      background: #ffeeee;
+      border: 1px dashed #e00000;
+      padding: 37px 15px 57px;
+      border-radius: 30px;
+
+      @media (min-width: 576px) {
+        padding: 37px 37px 57px;
+      }
+
+      .contact-form-title {
+        font-family: "Roboto Bold";
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        text-transform: uppercase;
+        position: relative;
+        color: #333333;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        &::after {
+          content: " ";
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          width: 100px;
+          height: 3px;
+          background: #333333;
+          transform: translateX(-50%);
+          border-radius: 30px;
+          z-index: 1;
+        }
+      }
+      .contact-form-sub-title {
+        text-align: center;
+        font-size: 15px;
+        margin-bottom: 32px;
+      }
+      .contact-form {
+        .wrapper-contact-form {
+          padding: 0;
+          margin-bottom: 6px;
+          @media (min-width: 768px) {
+            &:nth-child(1) {
+              padding-right: 15px;
+            }
+            &:nth-child(3) {
+              padding-right: 15px;
+            }
+          }
+          input {
+            width: 100%;
+            height: 40px;
+            outline: none;
+            background: #ffffff;
+            border: 1px solid #9db9d8;
+            border-radius: 5px;
+            padding: 0 17px;
+          }
+          textarea {
+            width: 100%;
+            height: 223px;
+            outline: none;
+            background: #ffffff;
+            border: 1px solid #9db9d8;
+            border-radius: 5px;
+            padding: 8px 17px;
+            resize: none;
+          }
+        }
+        .form-action {
+          max-width: 203px;
+          width: 100%;
+          padding: 12px 0;
+          text-align: center;
+          background: linear-gradient(270deg, #e00000 0%, #05a518 103.72%);
+          border-radius: 50px;
+          cursor: pointer;
+          margin: 0 auto;
+          &:hover {
+            background: linear-gradient(270deg, #05a518 0%, #e00000 103.72%);
+            opacity: 0.9;
+            .form-submit {
+              text-decoration: none;
+              color: #fff !important;
+            }
+          }
+
+          .form-submit {
+            font-family: "Roboto Bold";
+            font-size: 15px;
+            line-height: 40px;
+            text-transform: uppercase;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+.modal {
+  top: 10%;
+  .modal-dialog {
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    .modal-content {
+      background: none;
+      border: none;
+      .close {
+        right: 0;
+        position: absolute;
+        cursor: pointer;
+        top: -24px;
+        display: flex;
+        align-items: center;
+        color: #fff;
+        font-size: 15px;
+        text-shadow: none;
+        opacity: 1;
+      }
+      .modal-body {
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        iframe {
+          width: 100%;
+          border-radius: 12px;
+          height: 600px;
+          max-height: 80vh;
+        }
+      }
+    }
+  }
+}

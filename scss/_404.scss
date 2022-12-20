@@ -1,0 +1,120 @@
+.section-404 {
+  .bg-404 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .container-404 {
+    position: relative;
+    height: 100vh;
+    .wrapper-content-404 {
+      padding: 0 14px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100vw;
+      @media (min-width: 768px) {
+        width: 1100px;
+      }
+      .wrapper-img-404 {
+        margin: 0 auto;
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+        overflow: hidden;
+        @media (min-width: 768px) {
+          display: flex;
+          height: 190px;
+          justify-content: center;
+        }
+        img {
+          width: 100%;
+          @media (min-width: 768px) {
+            width: 375px;
+            object-fit: cover;
+          }
+        }
+      }
+      .title {
+        position: relative;
+        font-family: "Roboto Bold";
+        font-size: 16px;
+        line-height: 30px;
+        text-align: center;
+        margin-top: 24px;
+        margin-bottom: 6px;
+      }
+      .sub-title {
+        position: relative;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.5;
+        text-align: center;
+      }
+      .form-action {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 14px;
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 4px;
+          width: 100%;
+          max-width: 220px;
+          min-height: 40px;
+          background: linear-gradient(90deg, #05a518 0%, #e00000 100%);
+          border-radius: 5px;
+          font-size: 14px;
+          line-height: 40px;
+          color: #ffffff;
+          text-decoration: none;
+          transition: 0.2s;
+          position: relative;
+
+          &:hover {
+            background: linear-gradient(90deg, #e00000 0%, #05a518 100%);
+            color: #fff !important;
+
+            span {
+              color: #fff !important;
+            }
+          }
+
+          @media (min-width: 768px) {
+            font-size: 16px;
+          }
+          &:nth-child(2) {
+            background: #e00000;
+            border-radius: 5px;
+            white-space: nowrap;
+            font-size: 14px;
+            @media (min-width: 768px) {
+              font-size: 16px;
+            }
+
+            &:hover {
+              background: transparent;
+              border: 1px solid #e00000;
+              color: #e00000 !important;
+            }
+          }
+          &:nth-child(1) {
+            img {
+              margin-left: 10px;
+              width: 13px;
+              height: 13px;
+              object-fit: contain;
+            }
+          }
+        }
+      }
+    }
+  }
+}

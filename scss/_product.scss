@@ -1,0 +1,101 @@
+.page-product {
+  .products-menu {
+    + .products-menu {
+      padding-top: 30px;
+    }
+  }
+
+  .wrapper-card-nav-category {
+    padding: 38px 15px;
+    background: url("../images/product/bg-p-1.png") center center / cover no-repeat;
+    text-align: center;
+    margin-bottom: 30px;
+
+    @media (min-width: 991px) {
+      text-align: left;
+    }
+
+    .card-inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 640px;
+      margin: auto;
+      flex-direction: column;
+
+      @media (min-width: 991px) {
+        flex-direction: row;
+      }
+
+      .top-card {
+        width: 140px;
+
+        @media (min-width: 991px) {
+          margin-right: 22px;
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .body-card {
+        flex: 1;
+      }
+
+      .mid-card {
+        .title {
+          font-family: "Roboto Condensed Bold Italic";
+          font-size: 18px;
+          text-transform: uppercase;
+          color: #ffffff;
+          margin-bottom: 10px;
+
+          @media (min-width: 991px) {
+            font-size: 26px;
+          }
+        }
+
+        .description {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 24px;
+          color: #ffffff;
+          margin-bottom: 30px;
+
+          @media (min-width: 991px) {
+            font-size: 16px;
+          }
+        }
+      }
+
+      .bottom-card {
+        .more-btn {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 42px;
+          min-width: 144px;
+          width: 144px;
+          border-radius: 50px;
+          border: solid 3px transparent;
+          background-image: linear-gradient(90deg, #05a518, #e00000);
+          background-origin: border-box;
+          box-shadow: 2px 1000px 1px #fff inset;
+          outline: none;
+          cursor: pointer;
+          color: #333333;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          margin: auto;
+
+          @media (min-width: 991px) {
+            font-size: 16px;
+            margin: unset;
+          }
+        }
+      }
+    }
+  }
+}

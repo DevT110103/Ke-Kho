@@ -1,0 +1,99 @@
+.project {
+  .project-inner {
+    padding-bottom: 40px;
+    .wrapper-project {
+      padding-bottom: 32px;
+      .title {
+        position: relative;
+        font-family: 'Roboto Condensed Bold';
+        font-size: 26px;
+        line-height: 30px;
+        text-transform: uppercase;
+        color: #333333;
+        margin-left: 10px;
+        &::after {
+          content: '';
+          position: absolute;
+          width: 2px;
+          height: 50%;
+          background: linear-gradient(270deg, #e00000 0%, #05a518 103.72%);
+          top: 50%;
+          transform: translateY(-50%);
+          left: -10px;
+        }
+      }
+      @media (min-width: 991px) {
+        padding-bottom: 0;
+      }
+
+      .row {
+        row-gap: 30px;
+      }
+      .wrapper-card-project {
+        width: 100%;
+
+        .top-card {
+          .title-card {
+            font-family: 'Roboto Condensed Bold';
+            font-size: 18px;
+            line-height: 26px;
+            color: #333333;
+            margin-bottom: 9px;
+          }
+
+          a {
+            text-decoration: none;
+          }
+
+          .top-card-image {
+            margin-bottom: 15px;
+            border-radius: 10px;
+
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+        }
+
+        .mid-card,
+        .wrapper-date-view {
+          display: flex;
+          align-items: center;
+
+          .wrapper-date-view {
+            font-size: 14px;
+            margin-bottom: 6px;
+            color: #999;
+
+            .amount {
+              margin: 0;
+              margin: 0 8px;
+            }
+          }
+        }
+        .bottom-card {
+          .description {
+            font-size: 15px;
+            line-height: 150%;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            color: #333333;
+          }
+        }
+      }
+    }
+  }
+
+  .wrapper-title-card {
+    text-align: center;
+    margin-bottom: 28px;
+    .title::after {
+      display: none;
+    }
+  }
+}
